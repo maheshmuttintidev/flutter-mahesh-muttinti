@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Demo 1',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Mahesh Muttinti', lover: "Sharon"),
+      home: const MyHomePage(title: 'Mahesh Muttinti', lover: "Sharon Sanjana"),
     );
   }
 }
@@ -106,14 +106,15 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'You have pushed the button this many times:',
+              'You have pushed the button this many times 1:',
             ),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
             Text('My Lover Name is'),
-            Text(widget.lover)
+            Text(widget.lover),
+            Image.network('https://docs.flutter.dev/assets/images/docs/owl.jpg')
           ],
         ),
       ),
